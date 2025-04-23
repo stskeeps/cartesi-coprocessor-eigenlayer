@@ -1,0 +1,12 @@
+[package]
+name = "cartesi-coprocessoreigenlayer-query"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+cartesi-coprocessor-evm-call = {git = "https://github.com/zippiehq/cartesi-coprocessor-evm-call", branch = "use-revm", package = "cartesi-coprocessor-evm"}
+
+json = "0.12"
+hyper = { version = "0.14", features = ["http1", "runtime", "client"] }
+tokio = { version = "1.44", features = ["macros", "rt-multi-thread"] }
